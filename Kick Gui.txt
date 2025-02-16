@@ -1,0 +1,195 @@
+
+-- Gui to Lua
+
+-- Version: 0.9
+
+-- Instances:
+
+local gui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner3 = Instance.new("UICorner")
+local wht = Instance.new("Frame")
+local UICorner4 = Instance.new("UICorner")
+local White = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner5 = Instance.new("UICorner")
+local Textop = Instance.new("TextBox")
+local UICorner6 = Instance.new("UICorner")
+local kick = Instance.new("TextButton")
+local UICorner7 = Instance.new("UICorner")
+local UICorner8 = Instance.new("UICorner")
+local kick2 = Instance.new("TextButton")
+local UICorner0 = Instance.new("UICorner")
+local kick3 = Instance.new("TextButton")
+local UICorner9 = Instance.new("UICorner")
+
+---Properties:
+
+gui.Name = "kickgui"
+gui.Parent = game.CoreGui
+
+Frame.Size = UDim2.new(0.6, 0, 0.8, 0)
+Frame.Position = UDim2.new(0.2, 0, 0.1, 0)
+Frame.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Active = true
+Frame.BackgroundTransparency = 0 
+Frame.Draggable = true
+Frame.Parent = gui
+
+UICorner3.CornerRadius = UDim.new(0, 5)
+UICorner3.Parent = Frame
+
+wht.Size = UDim2.new(0.9, 44, 0.9, 24)
+wht.Position = UDim2.new(0.0, 0, 0.0, 0)
+wht.BackgroundColor3 = Color3.new(1, 1, 1)
+wht.BorderColor3 = Color3.new(0, 0, 0)
+wht.BorderSizePixel = 0
+wht.Active = failed
+wht.BackgroundTransparency = 0.7
+wht.Draggable = true
+wht.Parent = Frame
+
+UICorner4.CornerRadius = UDim.new(0, 5)
+UICorner4.Parent = wht
+
+White.Size = UDim2.new(0.9, 44, 0.0, 1)
+White.Position = UDim2.new(0.0, 0, 0.1, 19)
+White.BackgroundColor3 = Color3.new(1, 1, 1)
+White.BorderColor3 = Color3.new(0, 0, 0)
+White.BorderSizePixel = 0
+White.Active = failed
+White.BackgroundTransparency = 0 
+White.Draggable = true
+White.Parent = wht
+
+TextLabel.Size = UDim2.new(0.3, 0, 0.2, 0)
+TextLabel.Position = UDim2.new(0.3, 35, 0.0, 0)
+TextLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Text = "KicK Gui "
+TextLabel.BackgroundTransparency = 1
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Parent = wht
+TextLabel.TextSize = 49
+TextLabel.Font = Enum.Font.Highway
+
+TextBox.Size = UDim2.new(0.6, 0, 0.1, 8)
+TextBox.Position = UDim2.new(0.0, 19, 0.3, 10)
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.BorderColor3 = Color3.new(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Text = "Player"
+TextBox.TextColor3 = Color3.new(1, 1, 1)
+TextBox.BackgroundTransparency = 0.8
+TextBox.Font = Enum.Font.Code
+TextBox.TextSize = 15
+TextBox.Parent = wht
+TextBox.TextSize = 29
+
+UICorner5.CornerRadius = UDim.new(0, 9)
+UICorner5.Parent = TextBox
+
+Textop.Size = UDim2.new(0.6, 0, 0.1, 9)
+Textop.Position = UDim2.new(0.0, 19, 0.5, 8)
+Textop.BackgroundColor3 = Color3.new(1, 1, 1)
+Textop.BorderColor3 = Color3.new(0, 0, 0)
+Textop.BorderSizePixel = 0
+Textop.Text = "Reason"
+Textop.TextColor3 = Color3.new(1, 1, 1)
+Textop.BackgroundTransparency = 0.8
+Textop.Font = Enum.Font.Code
+Textop.TextSize = 15
+Textop.Parent = wht
+Textop.TextSize = 29
+
+UICorner6.CornerRadius = UDim.new(0, 9)
+UICorner6.Parent = Textop
+
+kick.Size = UDim2.new(0.6, 0, 0.1, 9)
+kick.Position = UDim2.new(0.0, 19, 0.7, 5)
+kick.BackgroundColor3 = Color3.new(1, 1, 1)
+kick.BorderColor3 = Color3.new(0, 0, 0)
+kick.BorderSizePixel = 0
+kick.Text = "Kick"
+kick.BackgroundTransparency = 0.8
+kick.TextColor3 = Color3.new(255, 255, 255)
+kick.Font = Enum.Font.Code
+kick.Parent = wht
+kick.TextSize = 29
+
+UICorner7.CornerRadius = UDim.new(0, 9)
+UICorner7.Parent = kick
+
+local Kick1 = Instance.new("TextButton")
+Kick1.Size = UDim2.new(0.2, 38, 0.1, 10)
+Kick1.Position = UDim2.new(0.7, 0, 0.4, 9)
+Kick1.BackgroundColor3 = Color3.new(1, 1, 1)
+Kick1.BorderColor3 = Color3.new(0, 0, 0)
+Kick1.BorderSizePixel = 0
+Kick1.Text = "Kick All"
+Kick1.BackgroundTransparency = 0.8
+Kick1.TextColor3 = Color3.new(1, 1, 1)
+Kick1.Font = Enum.Font.Code
+Kick1.Parent = wht
+Kick1.TextSize = 17
+
+UICorner8.CornerRadius = UDim.new(0, 9)
+UICorner8.Parent = Kick1
+
+kick2.Size = UDim2.new(0.2, 38, 0.1, 10)
+kick2.Position = UDim2.new(0.7, 0, 0.6, 0)
+kick2.BackgroundColor3 = Color3.new(1, 1, 1)
+kick2.BorderColor3 = Color3.new(0, 0, 0)
+kick2.BorderSizePixel = 0
+kick2.Text = "Kick Others"
+kick2.BackgroundTransparency = 0.8
+kick2.TextColor3 = Color3.new(1, 1, 1)
+kick2.Font = Enum.Font.Code
+kick2.Parent = wht
+kick2.TextSize = 17
+
+UICorner0.CornerRadius = UDim.new(0, 9)
+UICorner0.Parent = kick2
+
+kick3.Size = UDim2.new(0.2, 38, 0.1, 10)
+kick3.Position = UDim2.new(0.7, 0, 0.7, 15)
+kick3.BackgroundColor3 = Color3.new(1, 0, 0)
+kick3.BorderColor3 = Color3.new(0, 0, 0)
+kick3.BorderSizePixel = 0
+kick3.Text = "Kick Yourself"
+kick3.BackgroundTransparency = 0.8
+kick3.TextColor3 = Color3.new(255, 255, 255)
+kick3.Font = Enum.Font.Code
+kick3.Parent = wht
+kick3.TextSize = 17
+
+UICorner9.CornerRadius = UDim.new(0, 9)
+UICorner9.Parent = kick3
+
+---Scripts:
+
+local player = game.Players.LocalPlayer
+
+kick.MouseButton1Click:Connect(function()
+local TextBox = TextBox.Text
+    if TextBox == "dirga_officia" then   
+player:Kick("Reason")
+end
+end)
+
+Kick1.MouseButton1Click:Connect(function()
+player:Kick("Reason")
+end)
+
+kick2.MouseButton1Click:Connect(function()
+print("kick gui fake")
+end)
+
+kick3.MouseButton1Click:Connect(function()
+player:Kick("Reason")
+end)
